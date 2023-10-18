@@ -25,7 +25,7 @@ function bmi() {
  if (Bmi < 18.5) {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you are underweight!"
  }else if (Bmi < 25 ) {
-     resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you are healthy"
+     resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you have healthy weight."
  }else if (Bmi < 30) {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you are overweight!"
  }else{

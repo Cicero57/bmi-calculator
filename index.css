@@ -1,5 +1,5 @@
 body{
-    background-image: url("images/bmi-7.jpg");
+    background-image: url("images/bmi-7.jpg"); 
     height: 100%;
     background-repeat:no-repeat;
     background-size:cover;
@@ -43,7 +43,7 @@ body{
 
     position: relative;
     min-height: 100vh;
-    top: 15vh;
+    top: 5vh;
     
     backdrop-filter: blur(3px);
 
@@ -60,7 +60,10 @@ p{
 #content-wrap {
     padding-bottom: 2.5rem;    /* Footer height */
   }
-
+  #logo{
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
 #footer {
     position: absolute;
     bottom: 0;
