@@ -28,8 +28,8 @@ function bmi() {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you have healthy weight."
  }else if (Bmi < 30) {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you are overweight!"
- }else if(Bmi < 35) {
-     resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you have obesity!"
+ }else if(Bmi < 100) {
+     resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", you are dangeruosly overweight. You need to hit the gym!"
  }else{
     validate ()
  }
