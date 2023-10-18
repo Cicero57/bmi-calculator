@@ -1,3 +1,4 @@
+
 let timesClicked = 0;
 
 function check() {
@@ -16,7 +17,6 @@ function check() {
 
 
 
-
 let resultMessage = document.getElementById("result-el")
 function bmi() {
     let weightEl = document.getElementById("weight-el").value
@@ -28,8 +28,10 @@ function bmi() {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you have healthy weight."
  }else if (Bmi < 30) {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you are overweight!"
- }else{
+ }else if(Bmi < 35) {
      resultMessage.innerHTML += "Your Bmi result is " + Bmi.toFixed(1) + ", this means you have obesity!"
+ }else{
+    validate ()
  }
 
 // bmi = weight/(height * height) 
@@ -38,3 +40,7 @@ function bmi() {
 function reload() {
     document.location.reload()
 }
+
+function validate () {
+   resultMessage.innerHTML += "Please provide valid weight in kg and height in meters in the input field above!"
+    }
